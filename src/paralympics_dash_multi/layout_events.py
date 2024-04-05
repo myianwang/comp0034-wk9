@@ -24,13 +24,13 @@ def create_card(event_id, method):
     ev = get_event_data(event_id, method)
 
     # Variables for the card contents
-    logo = f'logos/{ev['year']}_{ev['host']}.jpg'
-    dates = f'{ev['start']} to {ev['end']}'
-    host = f'{ev['host']} {ev['year']}'
-    highlights = f'Highlights: {ev['highlights']}'
-    participants = f'{ev['participants']} athletes'
-    events = f'{ev['events']} events'
-    countries = f'{ev['countries']} countries'
+    logo = f"logos/{ev['year']}_{ev['host']}.jpg"
+    dates = f"{ev['start']} to {ev['end']}"
+    host = f"{ev['host']} {ev['year']}"
+    highlights = f"Highlights: {ev['highlights']}"
+    participants = f"{ev['participants']} athletes"
+    events = f"{ev['events']} events"
+    countries = f"{ev['countries']} countries"
 
     card = dbc.Card([
         dbc.CardBody(
